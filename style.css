@@ -1,18 +1,98 @@
-img{
-    width: 100%;
-    height: 400px;
-    border: 5px solid white;
+
+.title-name{
+    padding-top: 5%;
+    font-weight: bold;
 }
 
-h1{
-    font-family: 'Libre Baskerville', serif;
+.hero{
+    background-color: rgba(212, 228, 220);
     text-align: center;
-    text-transform: uppercase;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-p{
+.background-up{
+    opacity: 0.2;
+    width: 100%;
+}
+.hero p{
+    font-size: 3vh;
+}
+.hero-text-div{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    opacity: 1;
+}
+.hero-background{
+    width: 100vh;
+    height: 30%;
+    opacity: 1;
+}
+.hero-text{
+    letter-spacing: 3px;
+    vertical-align: middle;
+    font-family: 'IM Fell English', serif;
+}
+
+.introduction{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D0F5BE;
+    padding-top: 10%;
     text-align: center;
 }
-div{
-    width: 80%;
-    margin-left: 10%;
+.intro-text{
+    padding-top: 5%;
+    font-family: 'IM Fell English', serif;
+}
+.intro-text > p{
+    font-size: large;
+}
+.photo{
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+    border-radius: 50%;
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+/* Education */
+
+.education h3{
+    font-family: 'Lisu Bosa', serif;
+}
+
+/* Experience */
+.kla-photo{
+    height: 60px;
+    margin-bottom: 8px;
+}
+.designation{
+    font-family : "font-family: 'Lisu Bosa', serif;";
+}
+
+/* Project */
+.project-icon{
+    height: 50px;
+    width: 50px;
+    margin: 5%;
+}
+
+.description{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 4%;
+}
+
+/* Contact */
+.contactme-icon{
+    height: 40px;
+    width: 40px;
+    padding: 5%;
+    margin: 5%;
 }
