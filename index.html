@@ -11,8 +11,9 @@
     font-weight: bold;
 }
 
+/* Hero */
 .hero{
-    background-color: rgba(212, 228, 220);
+    background-color: #9AC5F4;
     text-align: center;
     height: 100vh;
     background-repeat: no-repeat;
@@ -41,6 +42,7 @@
     font-family: 'IM Fell English', serif;
 }
 
+/* Introduction */
 .introduction{
     display:flex;
     flex-direction: column;
@@ -48,6 +50,7 @@
     align-items: center;
     background-color: #D0F5BE;
     padding-top: 10%;
+    padding-bottom: 15%;
     text-align: center;
 }
 .intro-text{
@@ -75,6 +78,14 @@
     font-family: 'Lisu Bosa', serif;
 }
 
+.courses{
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.key-courses{
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* Experience */
 .kla-photo{
     height: 60px;
@@ -83,47 +94,62 @@
 .designation{
     font-family : "font-family: 'Lisu Bosa', serif;";
 }
+.exp-title{
+  margin-left: 5%;
+}
 
 /* Project */
 .project-icon{
     height: 50px;
     width: 50px;
-    margin: 5%;
+    margin-right: 5%;
+    float: left;
 }
 
 .description{
     font-family: 'PT Sans', sans-serif;
-    padding-top: 4%;
+    padding: 4%;
+}
+
+/*Hobbies*/
+.brahmatal-summit{
+    background-image: url(./assets/images/bramhatal.JPG);
+    height: 100px;
+    width: 100px;
 }
 
 /* Contact */
 .contactme-icon{
     height: 40px;
     width: 40px;
-    padding: 5%;
-    margin: 5%;
+}
+.contact-me{
+    background-color: #CA4E79;
 }
   </style>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"></head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@200&family=Playball&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@200&family=PT+Sans:ital@1&family=Playball&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@200&family=Playball&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@200&family=PT+Sans:ital@1&family=Playball&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
 <body>
 
   <!-- Hero -->
@@ -132,14 +158,12 @@
       <h1 class="title-name hero-text">Hi, I'm Ajay Singh</h1>
       <p class="designation hero-text">Software Developer</p>
     </div>
-    <div class="background-up">
-      <img src="./assets/images/programmer.png" height="300px" width="80%"/>
-    </div>
+    <img src="./assets/images/programmer.svg" height="30%"/>
   </div>
 
   <!--Introduction-->
   <div class="introduction">
-      <img class="photo" src="./assets/images/MyPhoto.JPG" height="100vh" width="100vh"/>
+      <img class="photo" src="./assets/images/MyPhoto.JPG" height="200px"/>
       <div class="intro-text container">
         <h1>Hello!</h1>
         <p>I am full-stack developer with experience in developing Web and Desktop based applications. <br /> I'm a music lover and trekking is my passion.</p>
@@ -198,71 +222,35 @@
     </div>
   </div>
 
-  <!-- Education -->
-  <div class="container px-4 py-5 education" id="featured-3">
-    <h2 class="pb-2 border-bottom">Education</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./assets/images/sssihl.jpeg" />
-        </div>
-        <h3 class="fs-2 text-body-emphasis">MTech. in CS </h3>
-        <p >Key Courses<p>
-        <button type="button" class="btn btn-success m-1">Design and Analyses of Algorithms</button>
-        <button type="button" class="btn btn-success m-1">Digital Image Processing</button>
-        <button type="button" class="btn btn-success m-1">Computer Architecture</button>
-        <button type="button" class="btn btn-success m-1">High Performance Computing </button>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./assets/images/sssihl.jpeg" />
-        </div>
-        <h3 class="fs-2 text-body-emphasis">MSc. in Mathematics</h3>
-        <br\>
-        <p >Key Courses<p>
-          <button type="button" class="btn btn-success m-1">Advanced Real Analyses</button>
-          <button type="button" class="btn btn-success m-1">Theory of Statistics</button>
-          <button type="button" class="btn btn-success m-1">Operating System</button>
-          <button type="button" class="btn btn-success m-1">Database Management System</button>      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img src="./assets/images/sssihl.jpeg" />
-        </div>
-        <h3 class="fs-2 text-body-emphasis">BSc.(Honours) in Mathematics</h3>
-        <p>Key Courses<p>
-          <button type="button" class="btn btn-success m-1">Design and Analyses of Algorithms</button>
-          <button type="button" class="btn btn-success m-1">Digital Image Processing</button>
-          <button type="button" class="btn btn-success m-1">Computer Architecture</button>
-          <button type="button" class="btn btn-success m-1">High Performance Computing </button>      </div>
-    </div>
-  </div>
-
-  <!-- Experience -->
-  <div class="container px-4 py-5 experience" id="hanging-icons">
+   <!-- Experience -->
+   <div class="container px-4 py-5 experience" id="hanging-icons">
     <h2 class="pb-2 border-bottom">Experience</h2>
     <h3 class="designation" >Associate Technical Lead, 
       <img class="kla-photo" src="./assets/images/kla.png" />
     </h3>
     <h6>July, 2020 - Present</h5>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
       <div class="col d-flex align-items-start">
         <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
             <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-          </svg> </div>
+          </svg>
+         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Production Insights</h3>
+          <h3 class="fs-2 exp-title text-body-emphasis">  Production Insights</h3>
           <p class="description"> Designed and Developed a highly-available, fault-tolerant and scalable Producer-Consumer based infrastructure to extract out various insights from KLA tools. It supports dynamic addition and removal of new Producers-Consumers. It aims at making
             the fleet of KLA tools observable.</p>
         </div>
       </div>
+
       <div class="col d-flex align-items-start">
         <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
             <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
           </svg>   </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">KLA tools</h3>
+          <h3 class="fs-2 exp-title text-body-emphasis">  KLA tools</h3>
           <p class="description">Leading the development of Software for SPA2 and SP8 series of KLA tools. Contributed in development of Material Based Classification feature
             in SP8 series of tools. This feature shall also enable classification of materials alongside identification of defects.
             Lead the development of Software for SPA2 series of tools which
@@ -277,7 +265,7 @@
             <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
           </svg>    </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis"> Re-Arch</h3>
+          <h3 class="fs-2 exp-title text-body-emphasis">  Re-Arch</h3>
           <p class="description"> Re-Designed the User Interface layer of the legacy software
             supported by the team using MVVM design pattern over WPF.
             Developed the backend from scratch, making it adhere to SOLID
@@ -300,6 +288,46 @@
       </div> -->
     </div>
   </div>
+  <!-- Education -->
+  <div class="container px-4 py-5 education" id="featured-3">
+    <h2 class="pb-2 border-bottom">Education</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./assets/images/sssihl.jpeg" />
+        </div>
+        <h3 class="fs-2 text-body-emphasis">MTech. in CS </h3>
+        <p class="key-courses">Key Courses<p>
+        <button type="button" class="btn btn-success m-1">Design and Analyses of Algorithms</button>
+        <button type="button" class="btn btn-success m-1">Digital Image Processing</button>
+        <button type="button" class="btn btn-success m-1">Computer Architecture</button>
+        <button type="button" class="btn btn-success m-1">High Performance Computing </button>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./assets/images/sssihl.jpeg" />
+        </div>
+        <h3 class="fs-2 text-body-emphasis">MSc. in Mathematics</h3>
+        <br\>
+        <p class="key-courses">Key Courses<p>
+          <button type="button" class="btn btn-success m-1">Advanced Real Analyses</button>
+          <button type="button" class="btn btn-success m-1">Theory of Statistics</button>
+          <button type="button" class="btn btn-success m-1">Operating System</button>
+          <button type="button" class="btn btn-success m-1">Database Management System</button>      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="./assets/images/sssihl.jpeg" />
+        </div>
+        <h3 class="fs-2 text-body-emphasis">BSc.(Honours) in Mathematics</h3>
+        <p class="key-courses">Key Courses<p>
+          <button type="button" class="btn btn-success m-1">Design and Analyses of Algorithms</button>
+          <button type="button" class="btn btn-success m-1">Digital Image Processing</button>
+          <button type="button" class="btn btn-success m-1">Computer Architecture</button>
+          <button type="button" class="btn btn-success m-1">High Performance Computing </button>      </div>
+    </div>
+  </div>
+
+ 
 
   <!-- Projects -->
   <div class="container px-4 py-5" id="icon-grid">
@@ -307,9 +335,12 @@
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div class="col d-flex align-items-start">
-        <img class="project-icon" src="./assets/images/sportsAI.png" >
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AI in Sports</h3>
+          <div>
+            <img class="project-icon" src="./assets/images/sportsAI.png" >
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AI in Sports</h3>
+          </div>
+          <br/>
           <p class="description"> Analyzing the run-up and
             delivery action of a fast bowler (In
             collaboration with Grey Scientific Labs)
@@ -322,10 +353,14 @@
             cadence of the bowler during his run-up</p>
         </div>
       </div>
+
       <div class="col d-flex align-items-start">
-        <img class="project-icon" src="./assets/images/web-app.png"/>
         <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Web based Password Locker</h3>
+        <div>
+          <img class="project-icon" src="./assets/images/web-app.png"/>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Password Locker</h3>
+        </div>
+        <br/>
           <p class="description">Developed a React based Password
             Locker App to store credentials for
             websites.
@@ -333,12 +368,14 @@
             APIs in REST. Added AES Encryption
             functionality in backend and used Mongo
             DB for persistance.</p>
-        </div>
-      </div>
+       </div>
+     </div>
+
       <div class="col d-flex align-items-start">
-        <img class="project-icon" src="./assets/images/android.jpeg"/>  
         <div>
+          <img class="project-icon" src="./assets/images/android.jpeg"/>  
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">FITIME</h3>
+         <br/>
           <p class="description"> Android Application to time
             exercise sessions. Developed the same
             application on both Xamarian Forms and
@@ -351,9 +388,10 @@
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <img class="project-icon" src="./assets/images/android.jpeg"/>  
-      <div>
+        <div>
+          <img class="project-icon" src="./assets/images/android.jpeg"/>  
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Guess the Note</h3>
+          <br/>
           <p class="description"> Android Application
             and a game to help in understanding
             Musical Notes.
@@ -364,9 +402,10 @@
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <img class="project-icon" src="./assets/images/neural-network.png" />
         <div>
+          <img class="project-icon" src="./assets/images/neural-network.png" />
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Neural Network in C++</h3>
+          <br/>
           <p class="description"> Trained a multi-layered neural network on MNIST data set.
             Implemented the algorithm and various functions from scatch in C++.
             </p>
@@ -396,21 +435,152 @@
     </div>
   </div>
 
+  <!-- Hobbies -->
+  <!-- <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Hobbies</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card brahmatal-summit card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Brahmatal Summit</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   -->
   <!-- Contact Me -->
-  <div class="container">
+  <div class="contact-me">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">Created by Ajay Singh </span>
+        <span class="mb-3 mx-3 mb-md-0 text-body-secondary">Created by Ajay Singh </span>
       </div>
   
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a href="https://leetcode.com/ajay257223/"><img class="contactme-icon" src="./assets/images/leetcode.webp"/></a></li>
-        <li class="ms-3"><a href="https://www.linkedin.com/in/ajay-singh-859449130/"><img class="contactme-icon" src="./assets/images/linkedin.png"/></a></li>
-        <li class="ms-3"><a href="/My Phone Number :- 9014943655"><img class="contactme-icon" src="./assets/images/phone.png"/></a></li>
-        <li class="ms-3"><a href="/My Email :- pawarajaysingh26@gmail.com"><img class="contactme-icon" src="./assets/images/gmail.png"/></a></li>
+      <ul class="nav col-md-4 pr-10 justify-content-end list-unstyled d-flex">
+        <li class="ps-3"><a href="https://leetcode.com/ajay257223/"><img class="contactme-icon" src="./assets/images/leetcode.webp"/></a></li>
+        <li class="ps-3"><a href="https://www.linkedin.com/in/ajay-singh-859449130/"><img class="contactme-icon" src="./assets/images/linkedin.png"/></a></li>
+        <li class="ps-3"><a href="./phone.html"><img class="contactme-icon" src="./assets/images/phone.svg"/></a></li>
+        <li class="ps-3 pe-3"><a href="./email.html"><img class="contactme-icon" src="./assets/images/gmail.svg"/></a></li>
       </ul>
     </footer>
   </div>
