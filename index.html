@@ -6,132 +6,12 @@
   <title>Ajay Singh</title>
   <style>
     
-.title-name{
-    padding-top: 5%;
-    font-weight: bold;
-}
-
-/* Hero */
-.hero{
-    background-color: #9AC5F4;
-    text-align: center;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.background-up{
-    opacity: 0.2;
-    width: 100%;
-}
-.hero p{
-    font-size: 3vh;
-}
-.hero-text-div{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    opacity: 1;
-}
-.hero-background{
-    width: 100vh;
-    height: 30%;
-    opacity: 1;
-}
-.hero-text{
-    letter-spacing: 3px;
-    vertical-align: middle;
-    font-family: 'IM Fell English', serif;
-}
-
-/* Introduction */
-.introduction{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #D0F5BE;
-    padding-top: 10%;
-    padding-bottom: 15%;
-    text-align: center;
-}
-.intro-text{
-    padding-top: 5%;
-    font-family: 'IM Fell English', serif;
-}
-.intro-text > p{
-    font-size: large;
-}
-.photo{
-    padding: 0px;
-    margin: 0px;
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-}
-.icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.75rem;
-}
-
-/* Education */
-
-.education h3{
-    font-family: 'Lisu Bosa', serif;
-}
-
-.courses{
-    font-family: 'Reem Kufi Fun', sans-serif;
-}
-
-.key-courses{
-    font-family: 'PT Sans', sans-serif;
-}
-
-/* Experience */
-.kla-photo{
-    height: 60px;
-    margin-bottom: 8px;
-}
-.designation{
-    font-family : "font-family: 'Lisu Bosa', serif;";
-}
-.exp-title{
-  margin-left: 5%;
-}
-
-/* Project */
-.project-icon{
-    height: 50px;
-    width: 50px;
-    margin-right: 5%;
-    float: left;
-}
-
-.description{
-    font-family: 'PT Sans', sans-serif;
-    padding: 4%;
-}
-
-/*Hobbies*/
-.brahmatal-summit{
-    background-image: url(./assets/images/bramhatal.JPG);
-    height: 100px;
-    width: 100px;
-}
-
-/* Contact */
-.contactme-icon{
-    height: 40px;
-    width: 40px;
-}
-.contact-me{
-    background-color: #CA4E79;
-}
   </style>
+  <link href="./style.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
@@ -151,6 +31,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
 <body>
 
   <!-- Hero -->
@@ -159,7 +41,7 @@
       <h1 class="title-name hero-text">Hi, I'm Ajay Singh</h1>
       <p class="designation hero-text">Software Developer</p>
     </div>
-    <img src="./assets/images/programmer.svg" height="30%"/>
+    <img src="./assets/images/developer-icon.png" height="30%" width="20%"/>
   </div>
 
   <!--Introduction-->
@@ -172,7 +54,9 @@
   </div>
   <!-- Skills -->
   <div class="container px-4 py-5 skills" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Skills</h2>
+    <div>
+      <h2 class="pb-2 border-bottom">Skills</h2>
+    </div>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
@@ -240,7 +124,7 @@
          </div>
         <div>
           <h3 class="fs-2 exp-title text-body-emphasis">  Production Insights</h3>
-          <p class="description"> Designed and Developed a highly-available, fault-tolerant and scalable Producer-Consumer based infrastructure to extract out various insights from KLA tools. It supports dynamic addition and removal of new Producers-Consumers. It aims at making
+          <p class="description"> Designed and Developed a highly-available, fault-tolerant and scalable Producer-Consumer based infrastructure to extract out various insights from KLA tools. It supports addition and removal of new Producers-Consumers at run-time. It aims at making
             the fleet of KLA tools observable.</p>
         </div>
       </div>
@@ -254,8 +138,7 @@
           <h3 class="fs-2 exp-title text-body-emphasis">  KLA tools</h3>
           <p class="description">Leading the development of Software for SPA2 and SP8 series of KLA tools. Contributed in development of Material Based Classification feature
             in SP8 series of tools. This feature shall also enable classification of materials alongside identification of defects.
-            Lead the development of Software for SPA2 series of tools which
-            caters to wafer requirements of Automobile industry.</p>
+           </p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -339,7 +222,7 @@
         <div>
           <div>
             <img class="project-icon" src="./assets/images/sportsAI.png" >
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AI in Sports</h3>
+            <h3 class="fw-bold mb-0 fs-4 project-heading text-body-emphasis">AI in Sports</h3>
           </div>
           <br/>
           <p class="description"> Analyzing the run-up and
@@ -359,7 +242,7 @@
         <div>
         <div>
           <img class="project-icon" src="./assets/images/web-app.png"/>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Password Locker</h3>
+          <h3 class="fw-bold mb-0 fs-4 project-heading text-body-emphasis">Password Locker</h3>
         </div>
         <br/>
           <p class="description">Developed a React based Password
@@ -375,7 +258,7 @@
       <div class="col d-flex align-items-start">
         <div>
           <img class="project-icon" src="./assets/images/android.jpeg"/>  
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">FITIME</h3>
+          <h3 class="fw-bold mb-0 fs-4 project-heading text-body-emphasis">FITIME</h3>
          <br/>
           <p class="description"> Android Application to time
             exercise sessions. Developed the same
@@ -391,7 +274,7 @@
       <div class="col d-flex align-items-start">
         <div>
           <img class="project-icon" src="./assets/images/android.jpeg"/>  
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Guess the Note</h3>
+          <h3 class="fw-bold mb-0 project-heading fs-4 text-body-emphasis">Guess the Note</h3>
           <br/>
           <p class="description"> Android Application
             and a game to help in understanding
@@ -405,171 +288,73 @@
       <div class="col d-flex align-items-start">
         <div>
           <img class="project-icon" src="./assets/images/neural-network.png" />
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Neural Network in C++</h3>
+          <h3 class="fw-bold mb-0 fs-4 project-heading text-body-emphasis">Neural Network in C++</h3>
           <br/>
           <p class="description"> Trained a multi-layered neural network on MNIST data set.
             Implemented the algorithm and various functions from scatch in C++.
             </p>
         </div>
       </div>
-      <!-- <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div> -->
     </div>
   </div>
 
   <!-- Hobbies -->
-  <!-- <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Hobbies</h2>
+  <div class="Hobbies container">
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card brahmatal-summit card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Brahmatal Summit</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>3d</small>
-              </li>
-            </ul>
+    <div id="carouselExampleIndicators carousel-images" class="carousel slide container">
+      <div>
+        <h2 class="pb-2 border-bottom">Hobbies</h2>
+      </div>
+      <div class="trekking">
+        <h3 class="pb-2" style="text-align: center;">Trekking</h2>
+      </div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="hobby-card">
+          <img src="assets/images/bramhatal.JPG" class="d-block " alt="family">
+        </div>
+      </div>
+        <div class="carousel-item hobby-card">
+          <div class="hobby-card">
+            <img src="./assets/images/hampta-pass.png"d-block" alt="dog">
+          </div>
+        </div>
+        <div class="carousel-item hobby-card">
+          <div class="hobby-card">
+            <img src="./assets/images/kishansar.JPG" class="d-block" alt="Couple">
+          </div>
+        </div>
+        <div class="carousel-item hobby-card">
+          <div class="hobby-card">
+            <img src="./assets/images/hill.JPG" class="d-block" alt="Couple">
           </div>
         </div>
       </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    
+      <div class="flute-video container">
+        <div class="Flautist">
+          <h3 class="pb-2" style="text-align: center;">Flute</h2>
+        </div>
+        <video src="./assets/images/flute.MP4" class="object-fit-contain" controls></video>
+      </div>
   </div>
-   -->
+
+</div>
   <!-- Contact Me -->
   <div class="contact-me">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

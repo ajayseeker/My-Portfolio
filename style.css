@@ -6,6 +6,10 @@
 
 /* Hero */
 .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #9AC5F4;
     text-align: center;
     height: 100vh;
@@ -44,6 +48,7 @@
     background-color: #D0F5BE;
     padding-top: 10%;
     padding-bottom: 15%;
+    height: 100%;
     text-align: center;
 }
 .intro-text{
@@ -56,7 +61,8 @@
 .photo{
     padding: 0px;
     margin: 0px;
-    width: fit-content;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
 }
 .icon-square {
@@ -79,6 +85,15 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+/* Skills */
+
+.skills{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Experience */
 .kla-photo{
     height: 60px;
@@ -86,6 +101,9 @@
 }
 .designation{
     font-family : "font-family: 'Lisu Bosa', serif;";
+}
+.exp-title{
+  margin-left: 5%;
 }
 
 /* Project */
@@ -102,12 +120,43 @@
 }
 
 /*Hobbies*/
-.brahmatal-summit{
-    background-image: url(./assets/images/bramhatal.JPG);
-    height: 100px;
-    width: 100px;
+.hobbies{
+    height: 100vh;
+    width: 100vh;
+   
+    padding-bottom: 15%;
+}
+.hobbies h3 h2{
+    font-family: 'IM Fell English', serif;
+}
+.hobby-card{
+    display: flex;
+    justify-content: center;
+}
+.hobby-card img{
+    height: 80vh;
+    width: 60vh;
+    border-radius: 10%;
+}
+.trekking{
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+.slide-button{
+    padding: 2%;
+    background-color: black;
 }
 
+.flute-video{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.flute-video video{
+    height: 100vh;
+}
 /* Contact */
 .contactme-icon{
     height: 40px;
