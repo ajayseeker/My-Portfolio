@@ -57,7 +57,6 @@
     align-items: center;
     background-color: #D0F5BE;
     padding-top: 10%;
-    padding-bottom: 15%;
     height: 100vh;
     text-align: center;
 }
@@ -88,6 +87,33 @@
     border-radius: 0.75rem;
 }
 
+
+/* Skills */
+
+.skills{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Experience */
+  .kla-photo{
+      height: 60px;
+      margin-bottom: 8px;
+  }
+  .designation{
+      font-family : "font-family: 'Lisu Bosa', serif;";
+  }
+  .exp-title{
+    margin-left: 5%;
+  }
+  @media (max-width:1000px){
+    .skills{
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+  }
 /* Education */
 
 .education h3{
@@ -100,27 +126,6 @@
 
 .key-courses{
     font-family: 'PT Sans', sans-serif;
-}
-
-/* Skills */
-
-.skills{
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Experience */
-.kla-photo{
-    height: 60px;
-    margin-bottom: 8px;
-}
-.designation{
-    font-family : "font-family: 'Lisu Bosa', serif;";
-}
-.exp-title{
-  margin-left: 5%;
 }
 
 /* Project */
